@@ -1,24 +1,29 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navigation from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Process from './components/Process';
-import Results from './components/Results';
-import CaseStudies from './components/CaseStudies';
-import Pricing from './components/Pricing';
-import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
-import Footer from './components/Footer';
-import Login from './components/Login';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navigation from "./components/Header";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import Process from "./components/Process";
+import Results from "./components/Results";
+import CaseStudies from "./components/CaseStudies";
+import Pricing from "./components/Pricing";
+import Testimonials from "./components/Testimonials";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
+import Login from "./components/Login";
+import StarsCanvas from "./components/main/StarBackground";
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-[#0a0a0a] text-white">
-        {/* Fixed Navigation */}
+      {/* Star Background */}
+      <div className="fixed inset-0 -z-10">
+        <StarsCanvas />
+      </div>
+
+      {/* App Content */}
+      <div className="min-h-screen bg-[#0a0a0a] text-white relative z-10">
         <Navigation />
 
-        {/* Page Content */}
         <main className="pt-20">
           <Routes>
             {/* Home Page */}
