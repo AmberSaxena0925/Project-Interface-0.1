@@ -26,7 +26,7 @@ function App() {
 
         <main className="pt-20">
           <Routes>
-            {/* Home Page */}
+           {/* Home Page  */}
             <Route
               path="/"
               element={
