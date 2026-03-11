@@ -10,6 +10,11 @@ import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
+import Register from "./components/Register";
+import Dashboard from "./components/Dashboard";
+import AdminPanel from "./components/AdminPanel";
+import About from "./components/About";
+import Contact from "./components/Contact";
 import StarsCanvas from "./components/main/StarBackground";
 
 function App() {
@@ -72,6 +77,21 @@ function App() {
 
             {/* Login Page */}
             <Route path="/login" element={<Login />} />
+
+            {/* Register Page */}
+            <Route path="/register" element={<Register />} />
+
+            {/* Dashboard Page */}
+            <Route path="/dashboard" element={<Dashboard />} />
+
+            {/* Admin Panel */}
+            <Route path="/admin" element={<AdminPanel />} />
+
+            {/* About Page */}
+            <Route path="/about" element={<About />} />
+
+            {/* Contact Page */}
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>
