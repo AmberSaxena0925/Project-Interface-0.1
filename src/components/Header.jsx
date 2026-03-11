@@ -20,7 +20,7 @@ export default function Navigation() {
           </div>
 
           {/* Center Navigation */}
-          <div className="absolute left-1/2 hidden md:flex -translate-x-1/2 items-center gap-8">
+          <div className="absolute left-1/2 hidden md:flex -translate-x-1/2 items-center gap-6">
             <button
               onClick={() => navigate('/about')}
               className="text-gray-300 hover:text-white transition text-sm"
@@ -29,9 +29,12 @@ export default function Navigation() {
             </button>
             {[
               ['services', 'Services'],
-              ['solutions', 'Solutions'],
+              ['process', 'Process'],
+              ['results', 'Results'],
               ['case-studies', 'Case Studies'],
               ['pricing', 'Pricing'],
+              ['testimonials', 'Testimonials'],
+              ['faq', 'FAQ'],
             ].map(([id, label]) => (
               <a
                 key={id}
@@ -90,9 +93,12 @@ export default function Navigation() {
             </button>
             {[
               ['services', 'Services'],
-              ['solutions', 'Solutions'],
+              ['process', 'Process'],
+              ['results', 'Results'],
               ['case-studies', 'Case Studies'],
               ['pricing', 'Pricing'],
+              ['testimonials', 'Testimonials'],
+              ['faq', 'FAQ'],
             ].map(([id, label]) => (
               <a
                 key={id}
